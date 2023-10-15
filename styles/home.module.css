@@ -1,0 +1,18 @@
+.detailContainer {
+  margin-top: 18px;
+  display: flex;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.carouselContainer {
+  flex-grow: 2;
+  font-family: fantasy;
+  margin-left: 40px;
+  .carouselTitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: lighter;
+  }
+}

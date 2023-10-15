@@ -1,0 +1,29 @@
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px 0 30px;
+  .title {
+    margin: 0;
+    font-size: 80px;
+    font-family: fantasy;
+  }
+}
+
+.nav {
+  line-height: 80px;
+}
+
+.headerLink {
+  text-decoration: none;
+  margin: 0 20px;
+}
+.blue {
+  color: #5b66c8;
+}
+.yellow {
+  color: #e9e958;
+}
+
+.green {
+  color: #43ae2c;
+}

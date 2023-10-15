@@ -1,0 +1,61 @@
+.searchBar {
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 14px 0; */
+}
+.searchBar > span {
+  height: 50px;
+  width: 33%;
+  line-height: 50px;
+  .searchIcon {
+    width: 18px;
+  }
+}
+/* .searchBar span:first-child {
+  width: 33%;
+} */
+
+.centerBox {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  text-align: center;
+  color: #747474;
+  width: 200px;
+  .centerLink {
+    color: #747474;
+  }
+  .centerLink:hover {
+    color: #5794c9;
+  }
+  .centerLink:not(:last-child)::after {
+    content: " • ";
+  }
+}
+
+.searchBar > span input {
+  color: #757171;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.searchBar > span:last-child {
+  text-align: right;
+}
+
+.searchBar > span input::placeholder {
+  color: rgb(188, 188, 188);
+  font-weight: lighter;
+}
+.searchBar > span input:focus {
+  outline: none;
+}
+.link {
+  color: #3cd428;
+}
+.curLink {
+  color: #1a8dbe;
+}
