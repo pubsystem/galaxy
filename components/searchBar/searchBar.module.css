@@ -39,23 +39,31 @@
   height: 40px;
   line-height: 40px;
   border: none;
+  background-color: #eef6fd;
   font-size: 18px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .searchBar > span:last-child {
   text-align: right;
 }
+.searcherBox svg {
+  position: relative;
+  top: 6px;
+  right: 4px;
+  cursor: pointer;
+  padding-left: 6px;
+}
 
 .searchBar > span input::placeholder {
-  color: rgb(188, 188, 188);
+  color: #cdcccc;
   font-weight: lighter;
 }
 .searchBar > span input:focus {
   outline: none;
 }
 .link {
-  color: #3cd428;
+  color: #1a8dbe;
 }
 .curLink {
-  color: #1a8dbe;
+  color: #57994e;
 }

@@ -16,3 +16,6 @@
     font-weight: lighter;
   }
 }
+.carouselContainer article a {
+  color: #2b8dff;
+}

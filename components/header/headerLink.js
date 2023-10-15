@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./header.module.css";
 
 const HeaderLink = (allprops) => {
-  console.log("allprops", allprops);
+  // console.log("allprops", allprops);
   return (
     <>
       <Link
