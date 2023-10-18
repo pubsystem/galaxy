@@ -2,6 +2,7 @@ import styles from "./searchBar.module.css";
 // import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 // const userInfo = "userInfouserInfouserInfo";
 const searchBarCenterLink = [
@@ -16,7 +17,7 @@ const searchBarCenterLink = [
     key: "Facebook",
   },
   {
-    name: "Insagram",
+    name: "Instagram",
     link: "123",
     key: "Insagram",
   },
@@ -28,6 +29,8 @@ const SearchBar = () => {
   let { query } = router;
   let path = route === "/" ? "Home" : query.name;
   // console.log("router", router, router.route, "route", route);
+  const [userSearch, setUserSearch] = useState();
+
   return (
     <div className={styles.searchBar}>
       <span>
@@ -53,7 +56,7 @@ const SearchBar = () => {
         &nbsp; -
       </span>
       <span className={styles.searcherBox}>
-        <input placeholder="Search" type="text" />
+        <input placeholder="Search" type="text" value={userSearch} />
         <svg width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
             fill="#cdcccc"
