@@ -4,6 +4,7 @@ import Header from "@/components/header/header";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Footer from "@/components/footer/footer";
+import "remixicon/fonts/remixicon.css";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();

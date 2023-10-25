@@ -50,6 +50,16 @@ const Footer = () => {
           >
             lu000194@algonquinlive.com
           </a>
+          <div className={styles.iconContainer}>
+            <i
+              class="ri-twitter-x-line"
+              className={`ri-twitter-x-line ${styles.red}`}
+            ></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-tiktok-line"></i>
+            <i class="ri-youtube-line"></i>
+            <i class="ri-linkedin-line"></i>
+          </div>
         </div>
       </div>
     </>

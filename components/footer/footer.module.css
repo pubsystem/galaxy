@@ -7,5 +7,15 @@
     .authorName {
       font-size: 30px;
     }
+    .iconContainer {
+      margin-top: 140px;
+      /* display: flex; */
+      /* justify-content: space-around; */
+    }
   }
+}
+
+.iconContainer i {
+  padding-right: 20px;
+  color: red;
 }
