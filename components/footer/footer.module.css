@@ -1,0 +1,11 @@
+.footerContainer {
+  margin-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  .authorContainer {
+    width: 50%;
+    .authorName {
+      font-size: 30px;
+    }
+  }
+}

@@ -3,6 +3,7 @@ import Header from "@/components/header/header";
 // import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Footer from "@/components/footer/footer";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
