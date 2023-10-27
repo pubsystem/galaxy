@@ -8,7 +8,9 @@ import "remixicon/fonts/remixicon.css";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  console.log("router from _App", router);
+  const isProd = process.env.NODE_ENV === "production";
+
+  console.log("router from _App isProd", router, isProd, process.env.NODE_ENV);
   return (
     <>
       <Head>
