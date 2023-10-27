@@ -5,8 +5,8 @@ const nextConfig = {
   //   unoptimized: true,
   // },
   trailingSlash: true,
-  basePath: "/github-pages",
-  // assetPrefix: "./",
+  // basePath: "/",
+  assetPrefix: "./",
   // crossOrigin: null,
   // trailingSlash: true,
   // experimental: {
