@@ -5,7 +5,7 @@ const nextConfig = {
   // images: {
   //   unoptimized: true,
   // },
-  // trailingSlash: true,
+  trailingSlash: true,
   // assetPrefix: isProd ? "." : undefined,
   // assetPrefix: ".",
   // crossOrigin: null,

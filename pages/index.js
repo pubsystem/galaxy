@@ -2,6 +2,7 @@ import ContentGrids from "@/components/contentGrids/contentGrids";
 import Link from "next/link";
 import styles from "@/styles/home.module.css";
 import Image from "next/image";
+const isProd = process.env.NODE_ENV === "production";
 
 export default function Home({ allprops }) {
   console.log("Home allprops", allprops);
@@ -11,7 +12,7 @@ export default function Home({ allprops }) {
         <div className={styles.detailImgWrapper}>
           <Image
             className="321"
-            src="/galaxy2.jpg"
+            src={isProd ? "./galaxy2.jpg" : "/galaxy2.jpg"}
             width={800}
             height={300}
             alt="galaxy"
