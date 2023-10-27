@@ -7,17 +7,15 @@
 .Grid {
   width: 23%;
   opacity: 88%;
-  color: #4a464d;
+
   font-family: fantasy;
 }
 .gridTitle {
   font-size: 20px;
-  color: #626567;
+  color: #b0afaf;
 }
 .gridDesc {
   width: 100%;
-  /* word-break: break-all; */
-  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
   /* height: 200px; */

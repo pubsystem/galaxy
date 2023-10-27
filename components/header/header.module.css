@@ -11,6 +11,21 @@
 
 .nav {
   line-height: 80px;
+  width: 50px;
+}
+.navAppearance {
+  line-height: 80px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.navAppearance i {
+  height: 50px;
+}
+.navAppearance i:hover {
+  zoom: 1.3;
 }
 
 .headerLink {
@@ -23,7 +38,6 @@
 .yellow {
   color: #e9e958;
 }
-
 .green {
   color: #43ae2c;
 }

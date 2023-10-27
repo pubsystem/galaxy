@@ -8,13 +8,15 @@ export default function Home({ allprops }) {
   return (
     <>
       <section className={styles.detailContainer}>
-        <Image
-          className="321"
-          src="/galaxy2.jpg"
-          width={800}
-          height={300}
-          alt="galaxy"
-        />
+        <div className={styles.detailImgWrapper}>
+          <Image
+            className="321"
+            src="/galaxy2.jpg"
+            width={800}
+            height={300}
+            alt="galaxy"
+          />
+        </div>
         <aside className={styles.carouselContainer}>
           <h2 className={styles.carouselTitle}>Explore the galaxy</h2>
           <article>

@@ -1,9 +1,18 @@
 body {
   width: 90vw;
   margin: 0 auto;
-  /* background-color: #eef6fd; */
+}
+.dark {
+  background-color: #222;
+  color: white !important;
 }
 
+.dark li a {
+  color: white !important;
+}
+.dark input {
+  background-color: #222;
+}
 a {
   text-decoration: none;
 }

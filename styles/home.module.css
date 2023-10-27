@@ -4,7 +4,11 @@
   padding-bottom: 18px;
   border-bottom: 1px solid #eaeaea;
 }
-
+.detailImgWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .carouselContainer {
   flex-grow: 2;
   font-family: fantasy;
