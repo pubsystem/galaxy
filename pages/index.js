@@ -10,11 +10,11 @@ export default function Home({ allprops }) {
     <>
       <section className={styles.detailContainer}>
         <div className={styles.detailImgWrapper}>
-          <Image
-            className="321"
+          <img
+            className={styles.detailImg}
             src={isProd ? "./galaxy2.jpg" : "/galaxy2.jpg"}
-            width={800}
-            height={300}
+            // width={800}
+            // height={300}
             alt="galaxy"
           />
         </div>

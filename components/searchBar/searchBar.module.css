@@ -3,28 +3,23 @@
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   /* padding: 14px 0; */
 }
 .searchBar > span {
   height: 50px;
-  width: 33%;
+  min-width: 280px;
   line-height: 50px;
   .searchIcon {
     width: 18px;
   }
 }
-/* .searchBar span:first-child {
-  width: 33%;
-} */
 
 .centerBox {
-  /* display: flex; */
-  /* justify-content: space-between; */
   text-align: center;
   color: #747474;
-  width: 200px;
   .centerLink {
-    color: #747474;
+    color: #949494;
   }
   .centerLink:hover {
     color: #5794c9;
@@ -45,13 +40,6 @@
 }
 .searchBar > span:last-child {
   text-align: right;
-}
-.searcherBox svg {
-  position: relative;
-  top: 6px;
-  right: 4px;
-  cursor: pointer;
-  padding-left: 6px;
 }
 
 .searchBar > span input::placeholder {
