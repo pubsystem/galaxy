@@ -23,8 +23,7 @@
   height: auto;
 }
 .carouselContainer {
-  max-width: 25vw;
-  /* font-family: fantasy; */
+  max-width: 26vw;
   margin-left: 40px;
   .carouselTitle {
     margin-top: 0;
