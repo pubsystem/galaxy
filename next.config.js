@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
-const isDev = process.env.NODE_ENV !== "production";
+const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
   // output: "export",
   // images: {
   //   unoptimized: true,
   // },
-  trailingSlash: true,
-  basePath: isDev ? "" : ".",
-  assetPrefix: "./",
+  // trailingSlash: true,
+  assetPrefix: isProd ? "." : undefined,
   // crossOrigin: null,
   // trailingSlash: true,
   // experimental: {
