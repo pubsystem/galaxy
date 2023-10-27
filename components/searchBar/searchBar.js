@@ -24,9 +24,22 @@ const SearchBar = () => {
   const router = useRouter();
   let { route } = router;
   let { query } = router;
+  console.log("router", router);
   let path = route === "/" ? "Home" : query.name;
-
-  const [userSearch, setUserSearch] = useState();
+  const [userQuery, setQuery] = useState("");
+  // const [userSearch, setUserSearch] = useState();
+  const jumpToTablePage = (e) => {
+    console.log("e", e, "userQuery", userQuery);
+    if (e && e.keyCode === 13 && userQuery.length) {
+      router.push({
+        pathname: "/searchTable",
+        query: { searchQuery: userQuery },
+      });
+    } else {
+      console.log("no!");
+      return false;
+    }
+  };
 
   return (
     <div className={styles.searchBar}>
@@ -53,8 +66,17 @@ const SearchBar = () => {
         &nbsp; -
       </span>
       <span className={styles.searcherBox}>
-        <input placeholder="Search" type="text" value={userSearch} />
-        <i className="ri-search-line"></i>
+        <input
+          placeholder="Search"
+          type="text"
+          value={userQuery}
+          onKeyDown={(e) => jumpToTablePage(e)}
+          onChange={(event) => setQuery(event.target.value)}
+        />
+        <i
+          className="ri-search-line"
+          onClick={() => jumpToTablePage({ keyCode: 13 })}
+        ></i>
       </span>
     </div>
   );
