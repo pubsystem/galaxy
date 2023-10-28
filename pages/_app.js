@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const isProd = process.env.NODE_ENV === "production";
 
-  console.log("router from _App isProd", router, isProd, process.env.NODE_ENV);
+  // console.log("router from _App isProd", router, isProd, process.env.NODE_ENV);
   return (
     <>
       <Head>

@@ -1,21 +1,21 @@
 import styles from "./searchBar.module.css";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 const searchBarCenterLink = [
   {
     name: "Twitter",
-    link: "#",
+    link: "/",
     key: "Twitter",
   },
   {
     name: "Facebook",
-    link: "#",
+    link: "/",
     key: "Facebook",
   },
   {
     name: "Instagram",
-    link: "#",
+    link: "/",
     key: "Insagram",
   },
 ];
@@ -24,27 +24,33 @@ const SearchBar = () => {
   const router = useRouter();
   let { route } = router;
   let { query } = router;
-  console.log("router", router);
   let path = route === "/" ? "Home" : query.name;
   const [userQuery, setQuery] = useState("");
-  // const [userSearch, setUserSearch] = useState();
+  // console.log("SearchBarrouterouteroute", router);
+  // useEffect(() => {
+  //   console.log("route", router);
+  //   if (route !== "/searchTable") {
+  //     const handler = () => setQuery("");
+  //     router.events.on("routeChangeComplete", handler);
+  //     return () => router.events.off("routeChangeComplete", handler);
+  //   }
+  // }, []);
   const jumpToTablePage = (e) => {
-    console.log("e", e, "userQuery", userQuery);
+    // console.log("e", e, "userQuery", userQuery, "router", router);
     if (e && e.keyCode === 13 && userQuery.length) {
       router.push({
         pathname: "/searchTable",
         query: { searchQuery: userQuery },
       });
     } else {
-      console.log("no!");
       return false;
     }
   };
-
   return (
     <div className={styles.searchBar}>
       <span>
-        You are Here: <span className={styles.curLink}>{path}</span>
+        You are Here:{" "}
+        <span className={styles.curLink}>{path || "Search Result"}</span>
         {route === "/" ? (
           ""
         ) : (

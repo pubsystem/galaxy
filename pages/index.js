@@ -5,7 +5,7 @@ import Image from "next/image";
 const isProd = process.env.NODE_ENV === "production";
 
 export default function Home({ allprops }) {
-  console.log("Home allprops", allprops);
+  // console.log("Home allprops", allprops);
   return (
     <>
       <section className={styles.detailContainer}>

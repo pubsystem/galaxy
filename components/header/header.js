@@ -31,7 +31,7 @@ const Header = () => {
     }
   }, []);
   useEffect(() => {
-    console.log("cur appearance:", userAppearance);
+    // console.log("cur appearance:", userAppearance);
     userAppearance === "light"
       ? document.body.classList.add("dark")
       : document.body.classList.remove("dark");
