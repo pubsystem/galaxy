@@ -12,7 +12,11 @@ export default function Home({ allprops }) {
         <div className={styles.detailImgWrapper}>
           <img
             className={styles.detailImg}
-            src={isProd ? "./galaxy2.jpg" : "/galaxy2.jpg"}
+            src={
+              isProd
+                ? "https://pubsystem.github.io/galaxy/galaxy2.jpg"
+                : "/galaxy2.jpg"
+            }
             // width={800}
             // height={300}
             alt="galaxy"
