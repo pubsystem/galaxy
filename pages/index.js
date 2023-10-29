@@ -8,7 +8,7 @@ export default function Home({ allprops }) {
   // console.log("Home allprops", allprops);
   return (
     <>
-      <section className={styles.detailContainer}>
+      <main className={styles.detailContainer} id="main-content">
         <div className={styles.detailImgWrapper}>
           <img
             className={styles.detailImg}
@@ -41,7 +41,7 @@ export default function Home({ allprops }) {
             centres of galaxies.
           </article>
         </aside>
-      </section>
+      </main>
       <ContentGrids />
     </>
   );

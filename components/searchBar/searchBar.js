@@ -47,7 +47,7 @@ const SearchBar = () => {
     }
   };
   return (
-    <div className={styles.searchBar}>
+    <nav className={styles.searchBar} id="nain-nav">
       <span>
         You are Here:{" "}
         <span className={styles.curLink}>{path || "Search Result"}</span>
@@ -84,7 +84,7 @@ const SearchBar = () => {
           onClick={() => jumpToTablePage({ keyCode: 13 })}
         ></i>
       </span>
-    </div>
+    </nav>
   );
 };
 

@@ -4,7 +4,7 @@ import contentData from "@/pageData/ homeGridData";
 
 const ContentGrids = () => {
   return (
-    <section className={styles.gridsContainer}>
+    <section className={styles.gridsContainer} id="section-container">
       {contentData.map((i) => (
         <Grid key={i.title} {...i} />
       ))}

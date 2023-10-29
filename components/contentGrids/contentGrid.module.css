@@ -11,6 +11,7 @@
   /* font-family: fantasy; */
 }
 .gridTitle {
+  min-height: 40px;
   font-size: 20px;
   color: #b0afaf;
 }

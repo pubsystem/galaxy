@@ -18,7 +18,7 @@ const DetailPage = () => {
       </Head>
       <main className={styles.detailMain}>
         <h2 className={styles.articleTitle}>{detailData[curDetail].title}</h2>
-        <article className={styles.article}>
+        <article className={styles.article} id="article-container">
           <Image
             className={`${
               styles[detailData[curDetail].className] || styles.imgLeft

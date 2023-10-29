@@ -11,13 +11,13 @@ const headerLinkDataLeft = [
   },
   {
     text: "SHOP",
-    herf: "/shop",
+    herf: "#",
     className: "yellow",
   },
   {
     text: "NEWS",
-    herf: "/news",
-    className: "green",
+    herf: "#",
+    className: "blue",
     last: true,
   },
 ];
@@ -39,7 +39,7 @@ const Header = () => {
   }, [userAppearance]);
   return (
     <>
-      <header className={styles.headerWrapper}>
+      <header className={styles.headerWrapper} id="header-container">
         <nav className={styles.nav}>
           {headerLinkDataLeft.map((i) => (
             <HeaderLink {...i} key={i.text} />
